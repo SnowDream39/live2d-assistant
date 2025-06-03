@@ -3,14 +3,8 @@
  */
 
 import TailwindTest from '@/components/TailwindTest.vue'
-import { type WindowOptions } from '@/stores/windows'
 
-export interface IconOptions {
-  name: string
-  windowOptions: WindowOptions
-}
-
-export const icons: Record<string, IconOptions> = {
+export const icons = {
   tailwind: {
     name: 'tailwind',
     windowOptions: {

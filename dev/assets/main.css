@@ -1,6 +1,4 @@
 @import './base.css';
-@import 'tailwindcss';
-@config "../../tailwind.config.js";
 
 @layer base {
   body {
