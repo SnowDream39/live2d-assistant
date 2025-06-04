@@ -1,7 +1,7 @@
 <template>
 	<div class="liveCanvas border-2 border-blue-500">
 		<canvas id=liveCanvas></canvas>
-		<span class="absolute top-0 left-0 flex">
+		<span class="absolute hidden top-0 left-0 flex">
 			<button @click="flick" class="bg-blue-500">Motion</button>
 		</span>
 	</div>
@@ -20,6 +20,7 @@ const props = defineProps<{
 	modelUrl: string
 }>()
 
+// ============= 管理LiveCanvas ==============
 
 // 创建refs
 let app: PIXI.Application | null = null;
