@@ -13,7 +13,7 @@ import LiveBubble from './LiveBubble.vue';
 import LiveCanvas from './LiveCanvas.vue';
 import LiveInput from './LiveInput.vue';
 import axios from 'axios';
-import postSSE from '@/utils/postSSEzju';
+import postSSE from '../utils/postSSEzju';
 
 const HiyoriUrl = '/hiyori_free_zh/runtime/hiyori_free_t08.model3.json'
 const modelUrl = '/mao_pro_zh/runtime/mao_pro.model3.json'
@@ -22,10 +22,10 @@ const modelUrl = '/mao_pro_zh/runtime/mao_pro.model3.json'
 
 const baseUrl = 'https://open.zju.edu.cn/api/proxy/api/v1'
 const config = {
-  //"AppKey": "d0vscsn3gkqs8ledrf90",
-  //"ApiKey": "d0vtv241cj98coi9kqh0",
-  "AppKey": "cve0g020bha5qsc85cmg",
-  "ApiKey": "d0vus9c1cj98coi9kvqg",
+  "AppKey": "d0vscsn3gkqs8ledrf90",
+  "ApiKey": "d0vtv241cj98coi9kqh0",
+  //"AppKey": "cve0g020bha5qsc85cmg",
+  //"ApiKey": "d0vus9c1cj98coi9kvqg",
   "UserId": "759723417"
 }
 
@@ -53,7 +53,7 @@ async function createConversation(): Promise<string> {
 
 
 async function chat(text: string) {
-  showText.value = '';
+  showText.value = '等待中......';
   await postSSE(baseUrl + '/chat_query', {
     AppKey: config.AppKey,
     AppConversationID: AppConversationID,
@@ -78,7 +78,7 @@ function handleInput(text: string) {
 
 function updateChat(event: any) {
   if (event.event === 'message_output_start') {
-
+    showText.value = '';
   } else if (event.event === 'message') {
     showText.value += event.answer;
   } else if (event.event === 'message_end') {

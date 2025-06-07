@@ -1,5 +1,5 @@
 <template>
-	<div class="liveCanvas border-2 border-blue-500">
+	<div class="liveCanvas">
 		<canvas id=liveCanvas></canvas>
 		<span class="absolute hidden top-0 left-0 flex">
 			<button @click="flick" class="bg-blue-500">Motion</button>

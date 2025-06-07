@@ -1,4 +1,4 @@
-import Live2dWidget from './components/LiveCanvas.vue'
+import Live2dWidget from './components/LiveWidget.vue'
 
 export default {
   install(app: any) {
