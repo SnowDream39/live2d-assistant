@@ -26,7 +26,4 @@ const renderedHtml = computed(() => {
 
 </script>
 
-<style>
-/* 可选：使用 Tailwind 的 prose 样式让渲染更美观 */
-@import 'https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css';
-</style>
+<style></style>

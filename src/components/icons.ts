@@ -3,8 +3,8 @@
  */
 
 export const icons = {
-  tailwind: {
-    name: 'tailwind',
+  example: {
+    name: 'example',
     windowOptions: {
       title: 'Window',
       content: null,
