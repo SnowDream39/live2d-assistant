@@ -25,7 +25,7 @@ export default defineConfig(({ command, mode }) => {
       ? {
           lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
-            name: 'VueLive2d',
+            name: 'VueLive2dWidget',
             fileName: 'index',
           },
           rollupOptions: {

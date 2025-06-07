@@ -2,12 +2,12 @@
   "name": "@snowdream39/live2d-widget",
   "version": "0.0.2",
   "type": "module",
-  "main": "dist/index.cjs",
+  "main": "dist/index.umd.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "style": "dist/index.css",
   "exports": {
-    ".": "./src/index.ts",
+    ".": "./dist/index.ts",
     "./style.css": "./dist/style.css",
     "./index.css": "./dist/index.css"
   },
@@ -31,10 +31,10 @@
     "sass": "^1.86.3",
     "sass-embedded": "^1.86.3",
     "vue": "^3.5.13",
-    "vue-router": "^4.5.0",
-    "vue-window": "link:..\\vue-window"
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@snowdream39/vue-window": "^0.0.1",
     "@tsconfig/node22": "^22.0.1",
     "@types/node": "^22.14.0",
     "@unocss/cli": "^66.1.3",
