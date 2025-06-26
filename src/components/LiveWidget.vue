@@ -1,8 +1,13 @@
 <template>
-  <div class="flex flex-col w-51">
-    <LiveBubble :text="showText" />
-    <LiveCanvas class="" :model-url="modelUrl" />
-    <LiveInput @submit="handleInput" />
+  <div class="flex flex-row w-100">
+    <div class="w-50 flex flex-col">
+      <LiveBubble :text="showText" />
+      <LiveInput @submit="handleInput" />
+    </div>
+    <div>
+
+      <LiveCanvas class="" :model-url="modelUrl" />
+    </div>
   </div>
 </template>
 

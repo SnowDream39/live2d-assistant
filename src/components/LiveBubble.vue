@@ -3,7 +3,7 @@
     <div
       class="w-[95%] max-w-[95%] max-h-[300px] overflow-hidden overflow-y-scroll bg-yellow-200 rounded-xl p-2 text-sm"
       ref="bubble">
-      <div v-html="renderedHtml" class="prose"></div>
+      <div v-html="renderedHtml" class="prose dark:text-white!"></div>
     </div>
   </div>
 </template>

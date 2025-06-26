@@ -37,7 +37,7 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@snowdream39/vue-window": "^0.0.1",
+    "@snowdream39/vue-window": "link:..\\vue-window",
     "@tsconfig/node22": "^22.0.1",
     "@types/node": "^22.14.0",
     "@unocss/cli": "^66.1.3",
